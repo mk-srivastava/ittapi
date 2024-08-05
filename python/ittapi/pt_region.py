@@ -33,6 +33,9 @@ class PT_Region(_NamedRegion):
     def end(self):
         """Marks the end of a pt_region."""
         _pt_region_end(self._region)
+    
+    def get_pt_region(self):
+        return self._region
 
 def pt_region(pt_region=None):
     """
